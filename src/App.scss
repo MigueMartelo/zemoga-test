@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -99,6 +99,34 @@ body {
       }
       .votes__down {
         background-color: rgba(255,173,29,.8);
+      }
+    }
+  }
+
+  &__days-remained {
+    height: 51px;
+    display: flex;
+    .closing__p {
+      width: 37%;
+      padding-right: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 13px;
+    }
+    .closing__days {
+      width: 63%;
+      padding-left: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      font-size: 37px;
+      color: #464646;
+      span {
+        font-weight: 300;
       }
     }
   }

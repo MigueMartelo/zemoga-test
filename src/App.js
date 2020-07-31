@@ -42,85 +42,90 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero__days-remainded">
-            <p>closing in</p>
-            <p>22 days</p>
-          </div>
+        </div>
+        <div className="hero__days-remained">
+          <p className="closing__p">closing in</p>
+          <p className="closing__days">
+            22 <span>days</span>
+          </p>
         </div>
       </div>
 
-      <main>
-        <article className="main__container">
-          <div>
-            <p>Speak out. Be heard.</p>
-            <h3>Be counted</h3>
-          </div>
-          <div>
-            <p>
-              Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can
-              speak out and speak freely. It’s easy: You share your opinion, we analyze and put the
-              data in a public report.
-            </p>
-          </div>
-        </article>
-
-        <article className="previous__rulings">
-          <h2>Previous Rulings</h2>
-          <div className="card__rouling">
-            <div className="card__title">
-              <div className="card__hand-thumbs">
-                <i className="fas fa-thumbs-up"></i>
-              </div>
-              <div className="card__name">
-                <h4>Kanye West</h4>
-              </div>
+      <div className="container">
+        <main>
+          <article className="main__container">
+            <div>
+              <p>Speak out. Be heard.</p>
+              <h3>Be counted</h3>
             </div>
-            <div className="card__content">
+            <div>
               <p>
-                Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.
+                Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone
+                can speak out and speak freely. It’s easy: You share your opinion, we analyze and
+                put the data in a public report.
               </p>
-              <div className="card__button">
-                <button>View Full Report</button>
+            </div>
+          </article>
+
+          <article className="previous__rulings">
+            <h2>Previous Rulings</h2>
+            <div className="card__rouling">
+              <div className="card__title">
+                <div className="card__hand-thumbs">
+                  <i className="fas fa-thumbs-up"></i>
+                </div>
+                <div className="card__name">
+                  <h4>Kanye West</h4>
+                </div>
               </div>
-              <div className="card__time">
-                <span>1 month ago in Enternainment</span>
+              <div className="card__content">
+                <p>
+                  Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit
+                  libero.
+                </p>
+                <div className="card__button">
+                  <button>View Full Report</button>
+                </div>
+                <div className="card__time">
+                  <span>1 month ago in Enternainment</span>
+                </div>
+              </div>
+              <div className="card__votes">
+                <div className="votes__up">
+                  <i className="fas fa-thumbs-up"></i>
+                </div>
+                <div className="votes__down">
+                  <i className="fas fa-thumbs-down"></i>
+                </div>
               </div>
             </div>
-            <div className="card__votes">
-              <div className="votes__up">
-                <i className="fas fa-thumbs-up"></i>
-              </div>
-              <div className="votes__down">
-                <i className="fas fa-thumbs-down"></i>
-              </div>
+          </article>
+
+          <article className="submit__name">
+            <div className="submit__info">
+              <p>Is there anyone else you would want us to add?</p>
             </div>
-          </div>
-        </article>
+            <div className="submit__button">
+              <button>Submit a Name</button>
+            </div>
+          </article>
+        </main>
 
-        <article className="submit__name">
-          <div className="submit__info">
-            <p>Is there anyone else you would want us to add?</p>
+        <footer>
+          <div className="footer__nav">
+            <ul>
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+            </ul>
           </div>
-          <div className="submit__button">
-            <button>Submit a Name</button>
+          <div className="footer__socials">
+            Fallow Us
+            <i className="fab fa-facebook-square"></i>
+            <i className="fab fa-twitter"></i>
           </div>
-        </article>
-      </main>
-
-      <footer>
-        <div className="footer__nav">
-          <ul>
-            <li>Terms and Conditions</li>
-            <li>Privacy Policy</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div className="footer__socials">
-          Fallow Us
-          <i className="fab fa-facebook-square"></i>
-          <i className="fab fa-twitter"></i>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }
