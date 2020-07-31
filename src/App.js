@@ -4,49 +4,53 @@ import "./App.scss";
 function App() {
   return (
     <div>
-      <hero>
-        <nav>
-          <h1 className="site__title">Rule of Thumb</h1>
-          <ul className="main__menu">
-            <li className="menu__item">Past Trials</li>
-            <li className="menu__item">How It Works</li>
-            <li className="menu__item">Log In / Sign Up</li>
-            <li className="menu__item">
-              <i className="fas fa-search"></i>
-            </li>
-          </ul>
-        </nav>
-        <div className="hero__card">
-          <p>What's your opinion on</p>
-          <h2>Pope Francis?</h2>
-          <p>
-            He’s talking tough on clergy sexual abuse, but is he just another papal pervert
-            protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
-          </p>
-          <p>
-            <i className="fab fa-wikipedia-w"></i>
-            More information
-          </p>
-          <p>
-            <strong>What's Your Veredit?</strong>
-          </p>
-          <div className="hero_votes">
-            <div className="votes_up">
-              <i className="fas fa-thumbs-up"></i>
+      <div className="hero">
+        <div className="container">
+          <nav className="main__navbar">
+            <h1 className="main__title">Rule of Thumb</h1>
+            <ul className="main__menu">
+              <li className="menu__item">Past Trials</li>
+              <li className="menu__item">How It Works</li>
+              <li className="menu__item">Log In / Sign Up</li>
+              <li className="menu__item">
+                <i className="fas fa-search"></i>
+              </li>
+            </ul>
+          </nav>
+          <div className="hero__card">
+            <div className="hero__card-content">
+              <small>What's your opinion on</small>
+              <h2>Pope Francis?</h2>
+              <p>
+                He’s talking tough on clergy sexual abuse, but is he just another papal pervert
+                protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
+              </p>
+              <p>
+                <i className="fab fa-wikipedia-w"></i>
+                <a href="https://wikipedia.com">More Information</a>
+              </p>
+              <p>
+                <strong>What's Your Veredit?</strong>
+              </p>
             </div>
-            <div className="votes_down">
-              <i className="fas fa-thumbs-down"></i>
+            <div className="hero__votes">
+              <div className="votes__up">
+                <i className="fas fa-thumbs-up"></i>
+              </div>
+              <div className="votes__down">
+                <i className="fas fa-thumbs-down"></i>
+              </div>
             </div>
           </div>
+          <div className="hero__days-remainded">
+            <p>closing in</p>
+            <p>22 days</p>
+          </div>
         </div>
-        <div className="hero__days-remainded">
-          <p>closing in</p>
-          <p>22 days</p>
-        </div>
-      </hero>
+      </div>
 
       <main>
-        <article>
+        <article className="main__container">
           <div>
             <p>Speak out. Be heard.</p>
             <h3>Be counted</h3>
@@ -113,8 +117,8 @@ function App() {
         </div>
         <div className="footer__socials">
           Fallow Us
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter"></i>
+          <i className="fab fa-facebook-square"></i>
+          <i className="fab fa-twitter"></i>
         </div>
       </footer>
     </div>
