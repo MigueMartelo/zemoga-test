@@ -69,32 +69,128 @@ function App() {
 
         <article className="previous__rulings">
           <h2>Previous Rulings</h2>
-          <div className="card__rouling">
-            <div className="card__title">
-              <div className="card__hand-thumbs">
-                <i className="fas fa-thumbs-up"></i>
-              </div>
-              <div className="card__name">
-                <h4>Kanye West</h4>
+          <div className="cards__container">
+            <div className="card__rouling">
+              <div className="card__content">
+                <div className="card__title">
+                  <div className="card__hand-thumbs">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="card__name">
+                    <h4>Kanye West</h4>
+                  </div>
+                </div>
+                <div className="card__description">
+                  <p>
+                    Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit
+                    libero.
+                  </p>
+                  <div className="card__more-info">
+                    <button>View Full Report</button>
+                    <span>1 month ago in Enternainment</span>
+                  </div>
+                </div>
+                <div className="card__votes">
+                  <div className="votes__up">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="votes__down">
+                    <i className="fas fa-thumbs-down"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="card__content">
-              <p>
-                Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.
-              </p>
-              <div className="card__button">
-                <button>View Full Report</button>
-              </div>
-              <div className="card__time">
-                <span>1 month ago in Enternainment</span>
+
+            <div className="card__rouling">
+              <div className="card__content">
+                <div className="card__title">
+                  <div className="card__hand-thumbs">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="card__name">
+                    <h4>Kanye West</h4>
+                  </div>
+                </div>
+                <div className="card__description">
+                  <p>
+                    Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit
+                    libero.
+                  </p>
+                  <div className="card__more-info">
+                    <button>View Full Report</button>
+                    <span>1 month ago in Enternainment</span>
+                  </div>
+                </div>
+                <div className="card__votes">
+                  <div className="votes__up">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="votes__down">
+                    <i className="fas fa-thumbs-down"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="card__votes">
-              <div className="votes__up">
-                <i className="fas fa-thumbs-up"></i>
+
+            <div className="card__rouling">
+              <div className="card__content">
+                <div className="card__title">
+                  <div className="card__hand-thumbs">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="card__name">
+                    <h4>Kanye West</h4>
+                  </div>
+                </div>
+                <div className="card__description">
+                  <p>
+                    Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit
+                    libero.
+                  </p>
+                  <div className="card__more-info">
+                    <button>View Full Report</button>
+                    <span>1 month ago in Enternainment</span>
+                  </div>
+                </div>
+                <div className="card__votes">
+                  <div className="votes__up">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="votes__down">
+                    <i className="fas fa-thumbs-down"></i>
+                  </div>
+                </div>
               </div>
-              <div className="votes__down">
-                <i className="fas fa-thumbs-down"></i>
+            </div>
+
+            <div className="card__rouling">
+              <div className="card__content">
+                <div className="card__title">
+                  <div className="card__hand-thumbs">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="card__name">
+                    <h4>Kanye West</h4>
+                  </div>
+                </div>
+                <div className="card__description">
+                  <p>
+                    Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit
+                    libero.
+                  </p>
+                  <div className="card__more-info">
+                    <button>View Full Report</button>
+                    <span>1 month ago in Enternainment</span>
+                  </div>
+                </div>
+                <div className="card__votes">
+                  <div className="votes__up">
+                    <i className="fas fa-thumbs-up"></i>
+                  </div>
+                  <div className="votes__down">
+                    <i className="fas fa-thumbs-down"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

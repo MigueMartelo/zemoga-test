@@ -159,4 +159,103 @@ main {
       cursor: pointer;
     }
   }
+  .previous__rulings {
+    h2 {
+      margin-bottom: 40px;
+      font-size: 40px;
+      font-weight: 300;
+    }
+    .cards__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+      grid-gap: 40px;
+      .card__rouling {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: hidden;
+        background-image: url('./assets/kanye.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        .card__content {
+          color: white;
+          background: linear-gradient(0deg,rgba(51,51,51,.7),rgba(51,51,51,.7) 40%,rgba(51,51,51,0));
+          .card__title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .card__hand-thumbs {
+              width: 32px;
+              height: 32px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 5px;
+              background-color: darkcyan;
+            }
+            .card__name h4 {
+              font-size: 45px;
+              font-weight: 300;
+            }
+          }
+          .card__description {
+            padding-left: 40px;
+            p {
+              margin-bottom: 20px;
+              font-size: 16px;
+              font-weight: 300;
+            }
+            .card__more-info {
+              height: 40px;
+              padding-right: 20px;
+              margin-bottom: 30px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              button {
+                width: 150px;
+                height: 100%;
+                font-family: 'Lato', sans-serif;
+                font-size: 14px;
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: 1px solid white;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                color: white
+              }
+              span {
+                width: 100px;
+                font-size: 12px;
+                text-align: end;
+              }
+            }
+          }
+          .card__votes {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            font-size: 30px;
+          }
+          .votes__up, .votes__down {
+            height: 100%;
+            min-width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .votes__up {
+            background-color: rgba(44,187,180,.7);
+          }
+          .votes__down {
+            background-color: rgba(255,173,29,.8);
+          }
+        }
+      }
+    }
+  }
 }
