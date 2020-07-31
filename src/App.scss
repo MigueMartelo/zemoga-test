@@ -176,10 +176,9 @@ main {
         flex-direction: column;
         justify-content: flex-end;
         overflow: hidden;
-        background-image: url('./assets/kanye.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50%;
+        background-position: center;
         .card__content {
           color: white;
           background: linear-gradient(0deg,rgba(51,51,51,.7),rgba(51,51,51,.7) 40%,rgba(51,51,51,0));
@@ -194,11 +193,21 @@ main {
               justify-content: center;
               align-items: center;
               margin-right: 5px;
-              background-color: darkcyan;
             }
-            .card__name h4 {
+            .card__name {
+              h4 {
               font-size: 45px;
-              font-weight: 300;
+              font-weight: normal;
+              }
+            }
+          }
+          .card__info {
+            padding-left: 40px;
+            margin-bottom: 20px;
+            span {
+              width: 100px;
+              font-size: 12px;
+              text-align: end;
             }
           }
           .card__description {
@@ -208,34 +217,47 @@ main {
               font-size: 16px;
               font-weight: 300;
             }
-            .card__more-info {
-              height: 40px;
-              padding-right: 20px;
-              margin-bottom: 30px;
+          }
+          .card__vote {
+            height: 40px;
+            padding-left: 40px;
+            padding-right: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .votes {
               display: flex;
-              justify-content: space-between;
-              align-items: center;
-              button {
-                width: 150px;
-                height: 100%;
-                font-family: 'Lato', sans-serif;
-                font-size: 14px;
-                background-color: Transparent;
-                background-repeat:no-repeat;
-                border: 1px solid white;
-                cursor:pointer;
-                overflow: hidden;
-                outline:none;
-                color: white
+              .votes__positive, .votes__negative {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
               }
-              span {
-                width: 100px;
-                font-size: 12px;
-                text-align: end;
+              .votes__positive {
+                background-color: #1cbbb4;
+              }
+              .votes__negative {
+                background-color: #ffad1d;
               }
             }
+            button {
+              width: 100px;
+              height: 100%;
+              font-family: 'Lato', sans-serif;
+              font-size: 14px;
+              background-color: Transparent;
+              background-repeat:no-repeat;
+              border: 1px solid white;
+              cursor:pointer;
+              overflow: hidden;
+              outline:none;
+              color: white
+            }
           }
-          .card__votes {
+          .card__votes-results {
             width: 100%;
             height: 50px;
             display: flex;
@@ -243,19 +265,83 @@ main {
           }
           .votes__up, .votes__down {
             height: 100%;
-            min-width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
+            span {
+              margin-left: 5px;
+              font-weight: 300;
+            }
           }
           .votes__up {
+            width: 64%;
             background-color: rgba(44,187,180,.7);
           }
           .votes__down {
+            width: 36%;
             background-color: rgba(255,173,29,.8);
           }
         }
       }
     }
   }
+  .submit__name {
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    background-image: url('./assets/city.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .submit__container {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      .submit__info p {
+        font-size: 30px;
+        font-weight: 300;
+        color: #333333;
+      }
+      .submit__button {
+        button {
+          width: 200px;
+          height: 50px;
+          font-family: 'Lato', sans-serif;
+          font-size: 20px;
+          background-color: Transparent;
+          border: 2px solid #333333;
+          cursor:pointer;
+          overflow: hidden;
+          outline:none;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+
+.kanye {
+  background-image: url('./assets/kanye.png');
+}
+.mark {
+  background-image: url('./assets/mark.png');
+}
+.cristina {
+  background-image: url('./assets/cristina.png');
+}
+.malala {
+  background-image: url('./assets/malala.png');
+}
+
+.up {
+  background-color: #1cbbb4;
+}
+
+.down {
+  background-color: #ffad1d;
 }
