@@ -3,7 +3,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <div>
+    <>
       <div className="hero">
         <div className="container">
           <header>
@@ -270,7 +270,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
 
