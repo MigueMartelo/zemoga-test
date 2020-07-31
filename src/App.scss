@@ -131,3 +131,32 @@ body {
     }
   }
 }
+
+main {
+  padding: 0 120px;
+  .main__info {
+  height: 100px;
+  margin: 35px 0;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebeb;
+    .info__title {
+      width: 35%;
+      font-size: 22px;
+      h3 {
+        font-size: 37px;
+      }
+    }
+    .info__description {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 23px;
+    }
+    .info__close {
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+}
