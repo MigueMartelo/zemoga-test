@@ -16,6 +16,10 @@ const Card = ({ person }) => {
 
   const upDown = voteUp > voteDown ? 'up' : 'down';
 
+  const borderVotes = { border: '2px solid white' };
+  const borderUp = vote === 'up' ? borderVotes : {};
+  const borderDown = vote === 'down' ? borderVotes : {};
+
   const handleVotes = (vote) => {
     if (vote === 'up') {
       setVoteUp(voteUp + 1);
@@ -62,10 +66,10 @@ const Card = ({ person }) => {
           {!userVote ? (
             <>
               <div className="votes">
-                <div className="votes__positive" onClick={() => setVote('up')}>
+                <div className="votes__positive" onClick={() => setVote('up')} style={borderUp}>
                   <i className="fas fa-thumbs-up"></i>
                 </div>
-                <div className="votes__negative" onClick={() => setVote('down')}>
+                <div className="votes__negative" onClick={() => setVote('down')} style={borderDown}>
                   <i className="fas fa-thumbs-down"></i>
                 </div>
               </div>
