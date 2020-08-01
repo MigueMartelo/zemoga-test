@@ -4,21 +4,22 @@ import "./App.scss";
 function App() {
   return (
     <>
+      <header>
+        <nav className="main__navbar">
+          <h1 className="main__title">Rule of Thumb</h1>
+          <ul className="main__menu">
+            <li className="menu__item">Past Trials</li>
+            <li className="menu__item">How It Works</li>
+            <li className="menu__item">Log In / Sign Up</li>
+            <li className="menu__item">
+              <i className="fas fa-search"></i>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <div className="hero">
-        <div className="container">
-          <header>
-            <nav className="main__navbar">
-              <h1 className="main__title">Rule of Thumb</h1>
-              <ul className="main__menu">
-                <li className="menu__item">Past Trials</li>
-                <li className="menu__item">How It Works</li>
-                <li className="menu__item">Log In / Sign Up</li>
-                <li className="menu__item">
-                  <i className="fas fa-search"></i>
-                </li>
-              </ul>
-            </nav>
-          </header>
+        <div className="hero__card-container">
           <div className="hero__card">
             <div className="hero__card-content">
               <small>What's your opinion on</small>
@@ -53,7 +54,7 @@ function App() {
         </div>
       </div>
 
-      <main className="container">
+      <main>
         <article className="main__info">
           <div className="info__title">
             <p>Speak out. Be heard.</p>
@@ -254,7 +255,7 @@ function App() {
         </article>
       </main>
 
-      <footer className="container">
+      <footer>
         <div className="footer__container">
           <div className="footer__nav">
             <ul>
