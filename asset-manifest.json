@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zemoga-test/static/css/main.980fa935.chunk.css",
+    "main.css": "/zemoga-test/static/css/main.8c1b6df2.chunk.css",
     "main.js": "/zemoga-test/static/js/main.e3bcc922.chunk.js",
     "main.js.map": "/zemoga-test/static/js/main.e3bcc922.chunk.js.map",
     "runtime-main.js": "/zemoga-test/static/js/runtime-main.d3234ea6.js",
@@ -8,9 +8,9 @@
     "static/js/2.183048c7.chunk.js": "/zemoga-test/static/js/2.183048c7.chunk.js",
     "static/js/2.183048c7.chunk.js.map": "/zemoga-test/static/js/2.183048c7.chunk.js.map",
     "index.html": "/zemoga-test/index.html",
-    "precache-manifest.801e994bb534e13df86264d0b9e45b94.js": "/zemoga-test/precache-manifest.801e994bb534e13df86264d0b9e45b94.js",
+    "precache-manifest.a221bc9e9eab5e59801de1788a5bab80.js": "/zemoga-test/precache-manifest.a221bc9e9eab5e59801de1788a5bab80.js",
     "service-worker.js": "/zemoga-test/service-worker.js",
-    "static/css/main.980fa935.chunk.css.map": "/zemoga-test/static/css/main.980fa935.chunk.css.map",
+    "static/css/main.8c1b6df2.chunk.css.map": "/zemoga-test/static/css/main.8c1b6df2.chunk.css.map",
     "static/js/2.183048c7.chunk.js.LICENSE.txt": "/zemoga-test/static/js/2.183048c7.chunk.js.LICENSE.txt",
     "static/media/Main.scss": "/zemoga-test/static/media/city.36ebe8a9.png",
     "static/media/App.scss": "/zemoga-test/static/media/mark.2cf40f7a.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.d3234ea6.js",
     "static/js/2.183048c7.chunk.js",
-    "static/css/main.980fa935.chunk.css",
+    "static/css/main.8c1b6df2.chunk.css",
     "static/js/main.e3bcc922.chunk.js"
   ]
 }
