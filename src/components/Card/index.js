@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './Card.scss';
 
 const Card = ({ person }) => {
-  const { picture, name, category, description, thumbsUp, thumbsDown } = person;
+  const { picture, name, category, description, thumbsUp, thumbsDown, id } = person;
 
   const [voteUp, setVoteUp] = useState(thumbsUp);
   const [voteDown, setVoteDown] = useState(thumbsDown);
@@ -20,7 +20,28 @@ const Card = ({ person }) => {
   const borderUp = vote === 'up' ? borderVotes : {};
   const borderDown = vote === 'down' ? borderVotes : {};
 
-  const handleVotes = (vote) => {
+  const saveLocalStorage = (id, vote, word) => {
+    const people = JSON.parse(localStorage.getItem('people'));
+    if (word === 'up') {
+      const newPeople = people.map((item) => {
+        if (item.id === id) {
+          item.thumbsUp = vote + 1;
+        }
+        return item;
+      });
+      localStorage.setItem('people', JSON.stringify(newPeople));
+    } else if (word === 'down') {
+      const newPeople = people.map((item) => {
+        if (item.id === id) {
+          item.thumbsDown = vote + 1;
+        }
+        return item;
+      });
+      localStorage.setItem('people', JSON.stringify(newPeople));
+    }
+  };
+
+  const handleVotes = (vote, id) => {
     if (vote === 'up') {
       setVoteUp(voteUp + 1);
       setPercUp((voteUp * 100) / (voteUp + voteDown));
@@ -29,6 +50,7 @@ const Card = ({ person }) => {
       setWidthDown({ width: percDown.toFixed() + '%' });
       setVote('');
       setUserVote(true);
+      saveLocalStorage(id, voteUp, 'up');
     } else {
       setVoteDown(voteDown + 1);
       setPercDown((voteDown * 100) / (voteUp + voteDown));
@@ -37,6 +59,7 @@ const Card = ({ person }) => {
       setWidthUp({ width: percUp.toFixed() + '%' });
       setVote('');
       setUserVote(true);
+      saveLocalStorage(id, voteDown, 'down');
     }
   };
 
@@ -73,7 +96,7 @@ const Card = ({ person }) => {
                   <i className="fas fa-thumbs-down"></i>
                 </div>
               </div>
-              <button onClick={() => handleVotes(vote)} disabled={disableButtom}>
+              <button onClick={() => handleVotes(vote, id)} disabled={disableButtom}>
                 Vote Now
               </button>
             </>

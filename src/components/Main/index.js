@@ -3,12 +3,18 @@ import React, { useState, useEffect } from 'react';
 import './Main.scss';
 import Card from '../Card';
 
-import data from '../../data.json';
+import mockData from '../../data.json';
 
 const Main = () => {
   const [people, setPeople] = useState([]);
-  useEffect(() => {
+  const saveData = (data) => {
     setPeople(data);
+  };
+  useEffect(() => {
+    if (!localStorage.getItem('people')) {
+      localStorage.setItem('people', JSON.stringify(mockData));
+    }
+    saveData(JSON.parse(localStorage.getItem('people')));
   }, []);
 
   const handleClick = () => {

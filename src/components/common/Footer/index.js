@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./Footer.scss";
+import './Footer.scss';
 
 const Footer = () => (
   <footer>
@@ -13,7 +13,7 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer__socials">
-        <p>Fallow Us</p>
+        <p>Falow Us</p>
         <i className="fab fa-facebook-square"></i>
         <i className="fab fa-twitter"></i>
       </div>
