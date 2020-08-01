@@ -6,6 +6,10 @@ import './Header.scss';
 const Header = () => (
   <header>
     <nav className="main__navbar">
+      <input type="checkbox" id="menu__hambur" />
+      <label htmlFor="menu__hambur" className="check__menu">
+        <i className="fas fa-bars"></i>
+      </label>
       <h1 className="main__title">
         <Link to="/">Rule of Thumb</Link>
       </h1>
