@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: white;
+}
+
+.kanye {
+  background-image: url('./assets/kanye.png');
+}
+.mark {
+  background-image: url('./assets/mark.png');
+}
+.cristina {
+  background-image: url('./assets/cristina.png');
+}
+.malala {
+  background-image: url('./assets/malala.png');
+}
+
+.up {
+  background-color: #1cbbb4;
+}
+
+.down {
+  background-color: #ffad1d;
+}

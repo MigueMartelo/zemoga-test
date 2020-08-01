@@ -1,0 +1,120 @@
+.hero {
+  width: 100%;
+  height: 740px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url('../../assets/francisco.png');
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  &__card-container{
+    width: 100%;
+    padding-left: 120px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  &__card {
+    max-width: 500px;
+    max-height: 450px;
+    margin: 190px 0 70px 0;
+    position: absolute;
+    bottom: 70px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    @media screen and (max-width: 768px) {
+      margin: 30px 40px;
+    }
+    @media screen and (max-width: 500px) {
+      margin: 25px 20px;
+    }
+    &-content {
+      padding: 40px;
+      small {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      h2 {
+        font-size: 60px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        @media screen and (max-width: 500px) {
+          font-size: 40px;
+        }
+      }
+      p {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 24px;
+        padding-right: 20px;
+        @media screen and (max-width: 500px) {
+          font-size: 16px;
+        }
+        i, a {
+          padding-top: 20px;
+          padding-bottom: 25px;
+          color: white;
+          font-size: 14px;
+          font-weight: 300;
+          @media screen and (max-width: 500px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .hero__votes {
+      width: 100%;
+      max-height: 80px;
+      display: flex;
+      font-size: 38px;
+      .votes__up, .votes__down {
+        height: 100%;
+        min-width: 50%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .votes__up {
+        background-color: rgba(44,187,180,.7);
+      }
+      .votes__down {
+        background-color: rgba(255,173,29,.8);
+      }
+    }
+  }
+
+  &__days-remained {
+    width: 100%;
+    height: 51px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    .closing__p {
+      width: 37%;
+      padding-right: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 13px;
+    }
+    .closing__days {
+      width: 63%;
+      padding-left: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      font-size: 37px;
+      color: #464646;
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}
