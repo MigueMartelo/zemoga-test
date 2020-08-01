@@ -20,13 +20,17 @@ const Card = ({ person }) => {
     if (vote === 'up') {
       setVoteUp(voteUp + 1);
       setPercUp((voteUp * 100) / (voteUp + voteDown));
+      setPercDown((voteDown * 100) / (voteUp + voteDown));
       setWidthUp({ width: percUp.toFixed() + '%' });
+      setWidthDown({ width: percDown.toFixed() + '%' });
       setVote('');
       setUserVote(true);
     } else {
       setVoteDown(voteDown + 1);
       setPercDown((voteDown * 100) / (voteUp + voteDown));
+      setPercUp((voteUp * 100) / (voteUp + voteDown));
       setWidthDown({ width: percDown.toFixed() + '%' });
+      setWidthUp({ width: percUp.toFixed() + '%' });
       setVote('');
       setUserVote(true);
     }
