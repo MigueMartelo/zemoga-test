@@ -8,6 +8,10 @@ header {
   .main__title {
     font-size: 32px;
     font-weight: normal;
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
   .main__navbar {
     width: 100%;
@@ -20,15 +24,23 @@ header {
       padding: 40px 0;
       list-style: none;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       li {
         padding-right: 50px;
         font-size: 16px;
         font-weight: 300;
         line-height: 19px;
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            font-weight: bold;
+          }
+        }
       }
       li:last-child {
         padding-right: 0;
+        cursor: pointer;
       }
     }
   }
