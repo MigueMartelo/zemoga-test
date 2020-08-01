@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/zemoga-test/static/css/main.9506fcee.chunk.css",
+    "main.js": "/zemoga-test/static/js/main.905628b8.chunk.js",
+    "main.js.map": "/zemoga-test/static/js/main.905628b8.chunk.js.map",
+    "runtime-main.js": "/zemoga-test/static/js/runtime-main.d3234ea6.js",
+    "runtime-main.js.map": "/zemoga-test/static/js/runtime-main.d3234ea6.js.map",
+    "static/js/2.183048c7.chunk.js": "/zemoga-test/static/js/2.183048c7.chunk.js",
+    "static/js/2.183048c7.chunk.js.map": "/zemoga-test/static/js/2.183048c7.chunk.js.map",
+    "index.html": "/zemoga-test/index.html",
+    "precache-manifest.2042f2ca564bfe580e5741010c5fd094.js": "/zemoga-test/precache-manifest.2042f2ca564bfe580e5741010c5fd094.js",
+    "service-worker.js": "/zemoga-test/service-worker.js",
+    "static/css/main.9506fcee.chunk.css.map": "/zemoga-test/static/css/main.9506fcee.chunk.css.map",
+    "static/js/2.183048c7.chunk.js.LICENSE.txt": "/zemoga-test/static/js/2.183048c7.chunk.js.LICENSE.txt",
+    "static/media/Main.scss": "/zemoga-test/static/media/city.36ebe8a9.png",
+    "static/media/App.scss": "/zemoga-test/static/media/mark.2cf40f7a.png",
+    "static/media/Hero.scss": "/zemoga-test/static/media/francisco.3be34c7b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3234ea6.js",
+    "static/js/2.183048c7.chunk.js",
+    "static/css/main.9506fcee.chunk.css",
+    "static/js/main.905628b8.chunk.js"
+  ]
+}
