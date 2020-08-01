@@ -10,6 +10,12 @@ const Main = () => {
   useEffect(() => {
     setPeople(data);
   }, []);
+
+  const handleClick = () => {
+    const divInfo = document.getElementsByClassName('main__info');
+    divInfo[0].remove();
+  };
+
   return (
     <main>
       <article className="main__info">
@@ -24,7 +30,9 @@ const Main = () => {
             data in a public report.
           </p>
         </div>
-        <div className="info__close">&times;</div>
+        <div className="info__close" onClick={handleClick}>
+          &times;
+        </div>
       </article>
 
       <article className="previous__rulings">

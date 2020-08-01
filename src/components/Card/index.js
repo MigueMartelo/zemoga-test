@@ -12,6 +12,7 @@ const Card = ({ person }) => {
   const [vote, setVote] = useState('');
   const [widthUp, setWidthUp] = useState({ width: percUp.toFixed() + '%' });
   const [widthDown, setWidthDown] = useState({ width: percDown.toFixed() + '%' });
+  const [userVote, setUserVote] = useState(false);
 
   const upDown = voteUp > voteDown ? 'up' : 'down';
 
@@ -21,11 +22,13 @@ const Card = ({ person }) => {
       setPercUp((voteUp * 100) / (voteUp + voteDown));
       setWidthUp({ width: percUp.toFixed() + '%' });
       setVote('');
+      setUserVote(true);
     } else {
       setVoteDown(voteDown + 1);
       setPercDown((voteDown * 100) / (voteUp + voteDown));
       setWidthDown({ width: percDown.toFixed() + '%' });
       setVote('');
+      setUserVote(true);
     }
   };
 
@@ -48,21 +51,27 @@ const Card = ({ person }) => {
           </span>
         </div>
         <div className="card__description">
-          <p>{description}</p>
+          <p>{!userVote ? description : 'Thank you for voting!'}</p>
         </div>
 
         <div className="card__vote">
-          <div className="votes">
-            <div className="votes__positive" onClick={() => setVote('up')}>
-              <i className="fas fa-thumbs-up"></i>
-            </div>
-            <div className="votes__negative" onClick={() => setVote('down')}>
-              <i className="fas fa-thumbs-down"></i>
-            </div>
-          </div>
-          <button onClick={() => handleVotes(vote)} disabled={disableButtom}>
-            Vote Now
-          </button>
+          {!userVote ? (
+            <>
+              <div className="votes">
+                <div className="votes__positive" onClick={() => setVote('up')}>
+                  <i className="fas fa-thumbs-up"></i>
+                </div>
+                <div className="votes__negative" onClick={() => setVote('down')}>
+                  <i className="fas fa-thumbs-down"></i>
+                </div>
+              </div>
+              <button onClick={() => handleVotes(vote)} disabled={disableButtom}>
+                Vote Now
+              </button>
+            </>
+          ) : (
+            <button onClick={() => setUserVote()}>Vote Again</button>
+          )}
         </div>
 
         <div className="card__votes-results">
