@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero component renders correctly 1`] = `
+<div>
+  <div
+    class="hero"
+  >
+    <div
+      class="hero__card-container"
+    >
+      <div
+        class="hero__card"
+      >
+        <div
+          class="hero__card-content"
+        >
+          <small>
+            What's your opinion on
+          </small>
+          <h2>
+            Pope Francis?
+          </h2>
+          <p>
+            He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
+          </p>
+          <p>
+            <i
+              class="fab fa-wikipedia-w"
+            />
+            <a
+              href="https://wikipedia.com"
+            >
+              More Information
+            </a>
+          </p>
+          <p>
+            <strong>
+              What's Your Veredit?
+            </strong>
+          </p>
+        </div>
+        <div
+          class="hero__votes"
+        >
+          <div
+            class="votes__up"
+          >
+            <i
+              class="fas fa-thumbs-up"
+            />
+          </div>
+          <div
+            class="votes__down"
+          >
+            <i
+              class="fas fa-thumbs-down"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hero__days-remained"
+    >
+      <p
+        class="closing__p"
+      >
+        closing in
+      </p>
+      <p
+        class="closing__days"
+      >
+        22 
+        <span>
+          days
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

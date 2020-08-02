@@ -10,10 +10,10 @@ const Header = () => (
       <label htmlFor="menu__hambur" className="check__menu">
         <i className="fas fa-bars"></i>
       </label>
-      <h1 className="main__title">
+      <h1 className="main__title" data-testid="main-title">
         <Link to="/">Rule of Thumb</Link>
       </h1>
-      <ul className="main__menu">
+      <ul className="main__menu" data-testid="nav-items">
         <li className="menu__item">
           <Link to="/past-trials">Past Trials</Link>
         </li>
