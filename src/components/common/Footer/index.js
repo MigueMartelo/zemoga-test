@@ -6,7 +6,7 @@ const Footer = () => (
   <footer>
     <div className="footer__container">
       <div className="footer__nav">
-        <ul>
+        <ul data-testid="nav-footer">
           <li>Terms and Conditions</li>
           <li>Privacy Policy</li>
           <li>Contact Us</li>

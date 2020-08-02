@@ -73,15 +73,15 @@ const Card = ({ person }) => {
             <i className={`fas fa-thumbs-${upDown}`}></i>
           </div>
           <div className="card__name">
-            <h4>{name}</h4>
+            <h4 data-testid="person-name">{name}</h4>
           </div>
         </div>
         <div className="card__info">
-          <span>
+          <span data-testid="person-category">
             <strong>1 month ago</strong> in {category}
           </span>
         </div>
-        <div className="card__description">
+        <div className="card__description" data-testid="person-description">
           <p>{!userVote ? description : 'Thank you for voting!'}</p>
         </div>
 
